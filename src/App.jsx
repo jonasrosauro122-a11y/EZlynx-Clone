@@ -1,33 +1,33 @@
 import React from 'react';
-import Sidebar from './components/Sidebar/Sidebar';
-import Topbar from './components/Topbar/Topbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Topbar from './components/Topbar/Topbar';
+import Sidebar from './components/Sidebar/Sidebar';
 import Dashboard from './pages/Dashboard';
+import Quote from './pages/Quote';
+import Clients from './pages/Clients';
 import Policies from './pages/Policies';
-import Claims from './pages/Claims';
-import Campaigns from './pages/Campaigns';
-import './App.css';
+import HomeQuote from './pages/HomeQuote';
+import AutoQuote from './pages/AutoQuote';
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <div className="app">
+      <div style={{ display: 'flex' }}>
         <Sidebar />
-        <div className="main-content">
+        <div style={{ flex: 1 }}>
           <Topbar />
-          <div className="page-content">
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/policies" element={<Policies />} />
-              <Route path="/claims" element={<Claims />} />
-              <Route path="/campaigns" element={<Campaigns />} />
-            </Routes>
-          </div>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/quote" element={<Quote />} />
+            <Route path="/clients" element={<Clients />} />
+            <Route path="/policies" element={<Policies />} />
+            <Route path="/home-quote" element={<HomeQuote />} />
+            <Route path="/auto-quote" element={<AutoQuote />} />
+          </Routes>
         </div>
       </div>
     </Router>
   );
-}
+};
 
 export default App;
-
