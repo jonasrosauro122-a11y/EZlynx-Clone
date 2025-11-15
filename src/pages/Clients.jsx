@@ -1,14 +1,12 @@
-// src/pages/Dashboard.jsx
 import React from 'react';
 
-const Dashboard = () => {
+function Clients() {
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <p>Welcome to your EZLynx-like app!</p>
+    <div style={{ padding: '20px' }}>
+      <h2>Clients Page</h2>
+      <p>Here you will manage all clients.</p>
     </div>
   );
-};
+}
 
-export default Dashboard;
-
+export default Clients;
