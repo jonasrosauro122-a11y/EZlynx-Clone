@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Sidebar from './components/Sidebar/Sidebar';
+import Topbar from './components/Topbar/Topbar';
 import Dashboard from './pages/Dashboard';
 import Clients from './pages/Clients';
 import Policies from './pages/Policies';
 import HomeQuote from './pages/HomeQuote';
 import AutoQuote from './pages/AutoQuote';
-import Sidebar from './components/Sidebar/Sidebar';
-import Topbar from './components/Topbar/Topbar';
+import './index.css';
 
 function App() {
   return (
