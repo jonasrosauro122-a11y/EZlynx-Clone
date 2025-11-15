@@ -1,12 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// COMPONENTS
 import Sidebar from './components/Sidebar/Sidebar';
 import Topbar from './components/Topbar/Topbar';
+
+// PAGES
 import Dashboard from './pages/Dashboard';
 import Clients from './pages/Clients';
 import Policies from './pages/Policies';
 import HomeQuote from './pages/HomeQuote';
 import AutoQuote from './pages/AutoQuote';
+
 import './index.css';
 
 function App() {
