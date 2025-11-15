@@ -1,14 +1,13 @@
-// src/pages/Dashboard.jsx
 import React from 'react';
+import HomeQuoteForm from '../components/forms/HomeQuoteForm';
 
-const Dashboard = () => {
+function HomeQuote() {
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <p>Welcome to your EZLynx-like app!</p>
+    <div style={{ padding: '20px' }}>
+      <h2>Home Quote</h2>
+      <HomeQuoteForm />
     </div>
   );
-};
+}
 
-export default Dashboard;
-
+export default HomeQuote;
