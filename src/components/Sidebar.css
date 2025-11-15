@@ -6,21 +6,7 @@
   padding: 20px;
   float: left;
 }
-
-.sidebar h2 {
-  margin-bottom: 20px;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin: 15px 0;
-}
-
-.sidebar a {
-  color: white;
-  text-decoration: none;
-}
+.sidebar h2 { margin-bottom: 20px; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar li { margin: 15px 0; }
+.sidebar a { color: white; text-decoration: none; }
